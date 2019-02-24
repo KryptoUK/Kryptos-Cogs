@@ -1,0 +1,8 @@
+{
+    "author" : ["Krypto"],
+    "install_msg" : "Thanks for checking out my cogs!",
+    "name" : "KryptoCogs",
+    "short" : "Numerous utility commands",
+    "description" : "Someuseful commands and functions for your bot. ",
+    "tags" : ["Fun", "Utility"]
+}
