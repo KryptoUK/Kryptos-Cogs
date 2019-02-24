@@ -1,0 +1,18 @@
+language: python
+
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
+      sudo: true
+
+install:
+ - pip install -U --process-dependency-links Red-DiscordBot[voice]
+ - pip install -U --process-dependency-links git+https://github.com/Rapptz/discord.py@rewrite
+ - pip install yarl==0.18.0
+ - pip install black
+
+script:
+ - make compile
+ - make stylecheck
+ - make deploy GITHUB_TOKEN=$GH_TOKEN BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
