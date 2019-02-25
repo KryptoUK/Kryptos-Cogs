@@ -9,7 +9,6 @@ matrix:
 install:
  - pip install -U --process-dependency-links Red-DiscordBot[voice]
  - pip install -U --process-dependency-links git+https://github.com/Rapptz/discord.py@rewrite
- - pip install yarl==0.18.0
  - pip install black
 
 script:
