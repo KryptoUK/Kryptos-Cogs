@@ -13,7 +13,7 @@ Pipfile
 
 # Sphinx docs
 .build
-_build
+build
 
 # pygettext
 *.mo
